@@ -1,15 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@500&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     border: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: 'Noto Serif', serif;
   }
 
 @media (min-width: 1024px) {
 
 .container {
     display: flex;
+    box-sizing: border-box;
   }
 
 .textoprincipal {
@@ -56,7 +61,7 @@
   padding-right: 25px;
   padding-top: 64px;
   padding-bottom: 70px;
-  background-color: #f5f5f5;
+  background-color: #dcdcdc;
   padding-top: 64px;
   padding-bottom: 72px;
   text-align: center;
@@ -158,7 +163,7 @@
 
 .newsletter-footer {
   background-color: #f5f5f5;
-  padding: 30px 0;
+  padding: 80px 0;
   text-align: center; /* Centralizar o conteúdo horizontalmente */
   width: 100%; /* Definir a largura do footer como 100% */
   position: absolute; /* Posicionar o footer no rodapé da página */
@@ -181,7 +186,7 @@
   justify-content: center; /* Centralizar o formulário horizontalmente */
   max-width: 400px; /* Limitar a largura do formulário para que ele não fique muito largo */
   margin: 0 1px; /* Centralizar o formulário horizontalmente */
-  margin-top: 23px;
+  margin-top: 115px;
 }
 
 .newsletter-form input {
@@ -221,63 +226,320 @@
   display: none;
 }
 
+.col.card1 { background-color: #c0c0c0 !important; }
+.col.card2{ background-color: #c0c0c0 !important; }
+.col.card3 { background-color: #c0c0c0!important; }
 
+.col.card4 { background-color: #d3d3d3!important; }
+.col.card5 { background-color: #d3d3d3!important; }
+.col.card6 { background-color: #d3d3d3!important; }
 
+.col.card7 { background-color: #d3d3d3!important; }
+.col.card8 { background-color: #d3d3d3!important; }
+.col.card9 { background-color: #d3d3d3!important; }
 
-.mododark {
+.content-layout {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.titlebar {
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.titlebar-title {
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.service-paragraph {
+  margin: 10px 0;
+}
+
+.titlebar .title.large {
+  font-size: 40px;
+}
+
+.fs16 {
+  font-size: 16px!important;
+}
+
+.notes-button-list li {
+  float: left;
+  margin: 10px 0 0 10px;
+}
+
+.notes-button-list:after {
+  display: block;
+  content: '';
+  clear: both;
+  height: 0;
+  overflow: hidden;
+}
+
+.notes-button-list {
+  margin-left: -10px;
+}
+
+.bold {
+  font-weight: 700!important;
   display: flex;
-  justify-content: flex-end;
-  margin-top: 2rem;
-  margin-right: 30px;
+  justify-content: center;
 }
 
-body.dark {
-  background: #292c35;
-}
-
-.checkbox {
-  opacity: 0;
-  position: absolute;
-}
-
-.label {
-  background-color: #111;
-  border-radius: 50px;
-  cursor: pointer;
+.notes-button-list {
+  margin-left: -10px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+}
 
-  padding: 5px;
+.margin_20b {
+  margin-bottom: 20px!important;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.notes-button-list .btn-large[class*='btn-'] {
+  padding: 0;
+  width: 38px;
+  text-align: center;
+  display: table-cell;
+  color: #888;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Arial,sans-serif;
+  background: #d6d6d4;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.filterdrop {
+  display: inline-block;
+  height: 32px;
   position: relative;
-  height: 26px;
-  width: 50px;
-  transform: scale(1.5);
-
+  vertical-align: middle;
 }
 
-.label .ball {
-  background-color: red;
-  border-radius: 50%;
+.filterdrop > a, .filterdrop > span, .filterdrop.filterdrop_on > span {
+  background: #fff;
+  background: -webkit-gradient(linear,left top,left bottom,from(#ffffff),to(#ffffff));
+  background: -moz-linear-gradient(top,#fff,#fff);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff,endColorstr=#ffffff);
+  -webkit-box-shadow: 0px 1px 0 #eef1f5, 0 1px 1px #dbe0e9 inset;
+  -moz-box-shadow: 0px 1px 0 #eef1f5,0 1px 1px #dbe0e9 inset;
+  box-shadow: 0px 1px 0 #eef1f5, 0 1px 1px #dbe0e9 inset;
+  border: 1px solid #A6B2C8;
+  box-shadow: 0 1px 1px #DBE0E9 inset;
+  color: #000000;
+  font-weight: 300;
+  border-radius: 2px 2px 2px 2px;
+  cursor: pointer;
+  display: block;
+  font-family: Arial,sans-serif;
+  line-height: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0 36px 0 8px;
+  outline: medium none;
+  text-decoration: none;
+}
+
+
+.small-textarea {
+  width: 50%;
+}
+
+.service-paragraph, .service-paragraph-mentions {
+  margin-bottom: 1.25rem;
+  line-height: 1.4;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+  text-decoration: underline;
+  color: #9e2a2a !important;
+}
+
+.service-table {
+  display: table;
+}
+
+.box_user_content textarea {
+  width: 100%;
+  background-color: transparent;
+}
+
+textarea {
+  font: 12px/1.5 Arial,sans-serif;
+  resize: none;
+}
+
+.box_user_content {
+  background: #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #eaeae9;
+  word-wrap: break-word;
+}
+
+.margin_20v {
+  margin-bottom: 20px!important;
+  margin-top: 20px!important;
+}
+
+
+.filterdrop a i {
+  right: 1px;
+  top: 1px;
+  width: 27px;
+  height: 30px;
+  border-radius: 0 2px 0 0;
+  border-left: 1px solid #c0c8d6;
+  background-color: #f5f6f8;
+  background-repeat: no-repeat;
+  background-position: -8px -1356px;
+  box-shadow: 0 1px 1px #DBE0E9 inset;
+}
+
+.filterdrop a i, .filterdrop.filterdrop_on span i {
+  display: block;
   position: absolute;
-  top: 2px;
-  left: 2px;
-  height: 22px;
-  width: 22px;
-  transform: translateX(0px);
-  transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .label .ball {
-  transform: translateX(24px);
+.blue-link {
+  color: #9e2a2a;
+  text-decoration: none;
 }
 
-.fa-moon {
-  color: #973a3e;
+.blue-link:hover {
+  text-decoration: underline;
 }
 
-.fa-sun {
-  color: #cd594c;
+.content-layout {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.section-wrap {
+  margin-bottom: 20px;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.titlebar-page {
+  background-color: #9e2a2a;
+  color: #fff;
+  padding: 10px;
+}
+
+.titlebar-title-lg {
+  margin: 0;
+  font-size: 24px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.service-paragraph {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.title-inter {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.service-list {
+  list-style: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.service-list-item {
+  line-height: 1.6;
+}
+
+/* Modificando a cor da barra de rolagem */
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #9e2a2a;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9e2a2a;
+}
+
+/* Modificando a cor do track (área em que a barra de rolagem se move) */
+::-webkit-scrollbar-track {
+  background-color: #a9a9a9;
+}
+
+/* Modificando a cor do botão de incremento e decremento da barra de rolagem (setas) */
+::-webkit-scrollbar-button {
+  background-color: #9e2a2a;
+}
+
+/* Modificando a cor do botão de incremento e decremento da barra de rolagem quando o mouse está sobre eles */
+::-webkit-scrollbar-button:hover {
+  background-color: #9e2a2a;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #dc3545 !important;
+  --bs-btn-border-color: #dc3545 !important;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #bb2d3b !important;
+  --bs-btn-hover-border-color: #b02a37 !important;
+  --bs-btn-focus-shadow-rgb: 49,132,253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #b02a37 !important;
+  --bs-btn-active-border-color: #a52834 !important;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #dc3545 !important;
+  --bs-btn-disabled-border-color: #dc3545 !important;
+}
+
+
+
+
 
 }

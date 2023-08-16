@@ -11,6 +11,7 @@
     <title>CodeCinema</title>
 </head>
 <body>
+
   <nav class="navbar navbar-expand-lg bg-body-tertiary custom-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Home</a>
@@ -23,29 +24,27 @@
             <a class="nav-link active" aria-current="page" href="filmes.html">Filmes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Séries</a>
+            <a class="nav-link" href="serie.html">Séries</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true"></a>
+            <a class="nav-link " href="sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contato.html">Contato</a>
           </li>
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-danger" type="submit">Search</button>
         </form>
+        <button class="btn btn-primary ms-3">
+          <a href="login.html" class="text-white text-decoration-none">Login</a>
+        </button>
       </div>
     </div>
   </nav>
 
-      <div class="mododark">
-        <input type="checkbox" class="checkbox" id="chk"/>
-        <label class="label" for="chk">
-          <i class="fas fa-moon"></i>
-          <i class="fas fa-sun"></i>
-          <div class="ball"></div>
-        </label>
-      </div>
-
+   
 
 
     <div class="container">
@@ -135,7 +134,26 @@
       </div>
     </section>
 
- 
+    <footer class="newsletter-footer">
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Assine nossa Newsletter</h3>
+          <p>Fique por dentro das novidades e receba nossas atualizações por e-mail.</p>
+          <p><a href="opinião.html">Queremos sua opinião</a></p>
+          <p><a href="conmdicoes.html">Termos e condições</a></p>
+          <p><a href="politica.html">Política de Privacidade</a></p>
+        </div>
+        <div class="col-md-6">
+          <form class="newsletter-form" id="newsletterForm">
+              <input type="email" name="email" placeholder="Insira seu email" required>
+              <button type="submit">Assinar</button>
+          </form>
+        </div>
+      </div>
+  </footer>
+
+
+
     <script src="script.js"></script>
 </body>
 </html>
